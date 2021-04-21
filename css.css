@@ -21,6 +21,11 @@ div{
     display: flex;
     justify-content: center;
 }
-.color{
-    background-color: blue;
+.derecha{
+    width: 50%;
+    background-color: rgb(14, 183, 212);
+}
+.izquierda{
+    width: 50%;
+    background-color: coral;
 }
