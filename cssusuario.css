@@ -27,7 +27,7 @@ body {
     font-weight: 300;
 }
 
-.form-box input[type="text"], .form-box input[type="password"], .form-box button[type="submit"] {
+.form-box input[type="text"], .form-box input[type="number"], .form-box input[type="password"], .form-box button[type="submit"] {
     border: 0;
     background: none;
     display: block;
@@ -40,6 +40,21 @@ body {
     color: white;
     border-radius: 40px;
     transition: 0.50s;
+}
+
+.form-box input[type="radio"]{
+    border: 0;
+    background: #0808a1;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3742fa;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
 }
 
 
