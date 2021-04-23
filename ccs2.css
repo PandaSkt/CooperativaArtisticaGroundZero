@@ -1,6 +1,13 @@
+body{
+    background-color: #1d2124;
+}
+
+
 h1{
-    color: blue;
+    color: white;
     text-decoration: underline;
+    display: flex;
+    justify-content: center;
 }
 p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -9,7 +16,7 @@ p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 span{
-    color: rgb(255, 255, 255);
+    color: chartreuse;
 }
 img{
     border: chocolate;
@@ -17,17 +24,11 @@ img{
 .centrado{
     text-align: center;
 }
-div{
+
+.carta{
     display: flex;
-    justify-content: center;
-}
-.derecha{
-    width: 50%;
-    background-color: rgb(14, 183, 212);
-}
-.izquierda{
-    width: 50%;
-    background-color: coral;
+    flex-direction: column;
+    align-items: left;
 }
 .carta > img{
     width: 80%;
@@ -36,7 +37,7 @@ div{
 
 .button{
     padding: 10px;
-    background-color: blue;
+    background-color: blue;  
 }
 
 .agregar-carrito{
@@ -47,12 +48,19 @@ div{
     border: 1px solid rgba(255, 255, 255, 0.05);
     background: #1d2124;
 }
-.centrado{
-    text-align: center;
+
+.info-card {
+    padding: 10px 20px;
+    color: white;
 }
 
-.carta{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
+div.container {
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+img {
+    width: 80%;
+    height: auto;
 }
