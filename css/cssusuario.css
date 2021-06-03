@@ -12,6 +12,9 @@ body {
 
 
 }
+p{
+    color: #ffffff;
+}
 
 .form-box {
     width: 800px;
@@ -27,7 +30,7 @@ body {
     font-weight: 300;
 }
 
-.form-box input[type="text"], .form-box input[type="number"], .form-box input[type="password"], .form-box button[type="submit"] {
+.form-box input[type="text"], .form-box label[type="email"],.form-box input[type="email"], .form-box input[type="number"], .form-box input[type="password"], .form-box button[type="submit"] {
     border: 0;
     background: none;
     display: block;
