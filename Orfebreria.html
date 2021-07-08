@@ -1,173 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
-  <title>Portada</title>
-  </head>
-  <body>
+     
+    <title>Orfebreria</title>
+    
+</head>
+<body>
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-      <div class="container-fluid">
-        <img src="imagenes/logo 3.png" alt=""> 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <div class="container-fluid">
+          <img src="img/Logo.png" alt=""> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="main.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="formulario.html">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="Orfebreria.html">Orfebreria</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="tejido.html">Tejido</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="escultura.html">Escultura</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="pintura.html">Pinturas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Redes Sociales
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="https://Instagram.com">Instagram</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://Facebook.com">Facebook</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://Twitter.com">Twitter</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://Gmail.com">Gmail</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="agregar" name="agregar" aria-current="page" href="agregar.html">agregar obra</a>
+              </li>
+            </ul>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Principal.html">Inicio</a>
+              <a aria-current="page" id="usuariologin" name="usuariologin" style="color:red">Contacto</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="iniciosesion.html">Iniciar Sesion</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Categorias
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item" href="Orfebreria.html">Orfebreria</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="tejido.html">Tejido</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="esculturas.html">Escultura</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="pintura.html">Pinturas</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="info.html">Info Adicional</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Redes Sociales
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item" href="https://Instagram.com">Instagram</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="https://Facebook.com">Facebook</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="https://Twitter.com">Twitter</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="https://Gmail.com">Gmail</a></li>
-              </ul>
-            </li>
+                <li 
+                class="nav-link active" aria-current="page" id="logear" name="logear"><a aria-current="page" href="login.html">Iniciar Sesion</a>
+                </li>
+                <li class="nav-link active" aria-current="page" id="deslogear" name="deslogear"><a  aria-current="page" href="funciones/logout.html">Cerrar Sesion</a></li>
+                
             
-          </ul>
-         
-            
-          </form>
+            <script>
+              if(window.sessionStorage){
+                var nombre = sessionStorage.getItem("nombre");
+                
+                if(nombre==null){
+                  document.getElementById("usuariologin").innerHTML="";
+                  document.getElementById("logear").hidden=false;
+                  document.getElementById("deslogear").hidden=true;
+                  document.getElementById("agregar").hidden=true;
+
+                }else{
+                 
+                  document.getElementById("usuariologin").innerHTML=nombre;
+                  document.getElementById("logear").hidden=true;
+                  document.getElementById("deslogear").hidden=false;
+                  document.getElementById("agregar").hidden=false;
+                }
+              }
+            </script>
+          </div>
         </div>
-      </div>
-    </nav>
-      
-  
+      </nav>
+      <!------------------------------------------------------------------------------------>
       <div class="container">
-        <link rel="stylesheet" href="css/ccs2.css">
-        <div class="row">
-            <div class="columns">
-                <div class="card">
-                    <div class="info-card">   
-                        <h1>Catalogo Orfebreria</h1>                  
-                        <h3>Conjunto de completo de Orfebrería Mapuche</h3>
-                        <p>Tecnica usada: Orfebrería.</p>
-                        <p>Material: Plata.</p>
-                        <p>Autor: Desconocido.</p>
-                        <p>"Pieza Unica"</p>
-                        <img src="imagenes/orfebreria/orfemapuche.jpg" alt="10"width="500px" height="250px"/>
-                        <p>No hay certeza del orígen de la platería mapuche, pero el gran rtabajo de 
-                            rería mapuche aparece en el siglo XVIII, donde se ocuparon las monedas de 
-                            plata que obtenían en la venta de sus animales durante la Frontera. estas 
-                            monedas eran fundidas o martilladas y trabajadas por los especialistas creando
-                            una gran producción de joyas, destinadas principalmente para el uso femenino 
-                            y en segundo término para los aperos del caballo. Estas otorgaban prestigio y 
-                            otaban el estatus del hombre y sus mujeres dentro de la estructura social mapuche.
-                            Al ser piezas originales el autor/a es desconocido.</p>                   
-                        <p class=""></p>
-                        <a href="#" class="button">$350.000</a>
-                    </div>
-                </div>
-             </div>
-        </div>
-        
-        <div class="row">
-            <div class="columns">
-                <div class="card">
-                    <div class="info-card">
-                        <h3>Set accesorios Mapuches</h3>
-                        <p>Tecnica usada: Orfebreria.</p>
-                        <p>Material: Plata.</p>
-                        <p>Autor: Manuel Llauptureo Alfaro.</p>
-                        <p>Stock: +10</p>
-                        <img src="imagenes/orfebreria/orfemapuche2.jpg" width="500px" height="250px">
-                        <p>Sabemos que, así como la platería de los aperos ecuestres era casi 
-                            siempre fabricada por plateros criollos que copiaban los modelos europeos
-                             adaptaban a las necesidad indígenas, eran generalmente plateros indígenas 
-                             los que fabricaban las joyas de las mujeres, fundiendo monedas de plata y 
-                             haciendo tubos, cadenas, cuentas y colgantes que después empleaban para crear 
-                             la pieza que se les era encargada. Hasta que no sea demostrado lo contrario, 
-                             debemos sostener que fueron la creatividad y la originalidad indígenas las 
-                             responsables de la compleja orfebrería mapuche.</p>
-                        
-                        <p class=""></p>
-                        <a href="#" class="button" data-id="1">
-                          
-                          $180.000</a>
-                    </div>
-                </div>
-             </div>
-        </div>
-        <div class="row">
-            <div class="columns">
-                <div class="card">
-                    <div class="info-card">
-                        <h3>El cernícalo</h3>
-                        <p>Tecnica usada: Alfareria.</p>
-                        <p>Material: Arcilla.</p>
-                        <p>Autor: Desconocido.</p>
-                        <p>"Pieza Unica"</p>
-                        <img src="imagenes/orfebreria/orfemapuche3.jpg" width="500px" height="250px">
-                        <p>—Falco sparverius cinnamominus— es un pequeño halcón de gran capacidad 
-                            de visión y vuelo estacionario que abunda en el Norte Chico. Proponemos 
-                            que esta ave rapaz fue representada en forma reiterada por los alfareros
-                             Diaguita, quienes imitaron de forma estilizada sus negras manchas 
-                             oculares, pico y plumaje moteado.Al
-                             ser piezas originales el autor/a es desconocido.</p>
-                        
-                        <p class=""></p>
-                        <a href="#" class="button" data-id="1">$168.000</a>
-                    </div>
-                </div>
-             </div>
-        </div>
-        <div class="row">
-            <div class="columns">
-                <div class="card">
-                    <div class="info-card">
-                        <h3>Figura Zoomorfa Jarra Pato</h3>
-                        <p>Tecnica usada: Alfareria.</p>
-                        <p>Material: Cerámica</p>
-                        <p>Autor: Desconocido.</p>
-                        <p>"Pieza Unica"</p>
-                        <img src="imagenes/orfebreria/orfemapuche4.jpg" width="500px" height="250px">
-                        <p>La cerámica hallada en este asentamiento diaguita del período incaico, 
-                            muestra la integración de figuras zoomorfas y antropomorfas, una mayor 
-                            variedad cromática en las piezas, y la creación de personajes con traje
-                             ajedrezado, además de elementos propios del mundo cuzqueño, como la 
-                             pachka y los jarros pato. Al
-                             ser piezas originales el autor/a es desconocido.</p>
-                        <p class=""></p>
-                        <a href="#" class="button" data-id="1">$200.000</a>
-                    </div>
-                </div>
-             </div>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>  
-  </body>
+        <link rel="stylesheet" href="css/img.css">
+        <link rel="stylesheet" href="css/obras.css">
+        <h1>Orfebreria</h1>   
+        <div class="info-card">   
+            <h3>Gorro celeste</h3>                 
+            <p>Tecnica usada: Punto alto para crochet</p>
+            <p>Artista desconocido</p>
+            <p>Material: Lana</p>
+            <img src="img/orfebreria1.png" width="500px" height="250px">
+            <p>El gorro es una prenda redonda de tela o de punto que sirve para cubrir y abrigar la cabeza. Esta prenda se dice que tuvo su origen en asia, exactamente en persia. Se dice que los Grifios tomaron este gorro de los persas, aunque no fue muy usado pues la costumbre en esa epoca era estar con la cabeza descubierta.</p>
+            <p>Precio: $59.000</p>
+            <p><button id="vender">Comprar</button></p>
+    
+          </div>
+          <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-9c6fa8e8-580a-40cd-a4d7-c1d58008835e"></div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <div class="elfsight-app-bd8dbb65-753a-47dc-8662-4b2a3dcb4014"></div>
+    </body>
 </html>
