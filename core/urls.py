@@ -13,5 +13,6 @@ urlpatterns = [
     path('registro', views.registro,name="registro"),
     path('admin', views.admin,name="admin"),
     path('tablacrud', views.tablacrud,name="tablacrud"),
-    path('agregarcrud/', views.agregarcrud,name="agregarcrud"),
+    path('agregarcrud', views.agregarcrud,name="agregarcrud"),
+    path('funciones/formulariof', views.formulariof,name="formulariof")
 ]
