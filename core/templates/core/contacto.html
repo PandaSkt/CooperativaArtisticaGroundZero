@@ -1,0 +1,168 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incio de Sesion</title>
+    <link href="cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<style>
+    .error{color: rgb(255, 255, 255);
+      font-display: 5px;
+    }
+
+</style>
+<style type="text/css">
+      body{
+        background-image: url("static/core/img/fondo.jpg")
+      }
+</style>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <img src="{% static 'core/img/logo.png' %}" alt=""> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'contacto' %}">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="{% url 'orfebreria' %}">Orfebreria</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="{% url 'tejido' %}">Tejido</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="{% url 'escultura' %}">Escultura</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="{% url 'pintura' %}">Pinturas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Redes Sociales
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="https://Instagram.com">Instagram</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://Facebook.com">Facebook</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://Twitter.com">Twitter</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://Gmail.com">Gmail</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <a class="nav-link active" aria-current="page" href="{% url 'login' %}">Iniciar Sesion</a>
+            </form>
+          </div>
+        </div>
+        <script>
+              if(window.sessionStorage){
+                var nombre = sessionStorage.getItem("nombre");
+                
+                if(nombre==null){
+                  document.getElementById("usuariologin").innerHTML="";
+                  document.getElementById("logear").hidden=false;
+                  document.getElementById("deslogear").hidden=true;
+                  document.getElementById("agregar").hidden=true;
+
+                }else{
+                 
+                  document.getElementById("usuariologin").innerHTML=nombre;
+                  document.getElementById("logear").hidden=true;
+                  document.getElementById("deslogear").hidden=false;
+                  document.getElementById("agregar").hidden=false;
+                }
+              }
+            </script>
+      </nav>
+        <!------------------------------------------------>
+<div class="container">
+  <div style="display: flex; justify-content: center; margin-top: 5%; color: aliceblue;">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="{% static 'js/script.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <div style="width: 30%;">
+        <form action="funciones/formulario.html" method="POST" id="formulario" name="formulario">
+         <h1>Contacto</h1>
+            <div class="form-group">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="nombre*" class="form-control">
+            </div>
+            <p></p>
+            <div class="form-group">
+              <label for="asunto" class="form-label">Asunto:</label>
+              <input type="text" name="asunto" id="asunto" placeholder="asunto*" class="form-control">
+          </div>
+          <p></p>
+            <div class="form-group">
+              <label for="msj" class="form-label">Mensaje: </label>
+              <textarea cols="30" rows="5" name="msj" id="msj" placeholder="Mensaje*" class="form-control"></textarea>
+            </div>
+            <p></p>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+            <p></p>
+            <label for="">Nuestra sucursal se encuentra en Av. Andrés Bello 2425, Providencia, Región Metropolitana</label>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.2015632317984!2d-70.60857878426566!3d-33.417989003234304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf69d4854951%3A0x9a87ef2fefaad0df!2sCostanera%20Center!5e0!3m2!1ses!2scl!4v1625779355952!5m2!1ses!2scl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </form>
+      </div>
+  </div>
+  </div>
+    <script>
+        $(document).ready(function(){
+            $("#formulario").validate({
+                rules: {
+                  nombre: {
+                        required: true,
+                        minlength: 8
+                    },
+                  asunto: {
+                        required: true,
+                    },
+
+                  msj: {
+                        required: true,
+                    }
+                },
+                messages: {
+                  nombre: {
+                        required: "Ingrese su nombre",
+                        minlength:"El Nombre debe tener al menos 8 caracteres"
+                    },
+                  asunto: {
+                        required: "Ingrese el Asunto",
+                    },
+                  msj: {
+                        required: "Ingrese el Mensaje para ponernos en contacto",
+                    },
+                }
+            });
+            
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-bd8dbb65-753a-47dc-8662-4b2a3dcb4014"></div>
+</body>
+
+</html>
