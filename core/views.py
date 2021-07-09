@@ -33,6 +33,9 @@ def registro(request):
 def admin(request):
     return render(request, 'core/admin.html')
 
+def registrof(request):
+    return render(request, 'core/registrof.html')    
+
 def tablacrud(request):
     tablas = tabla.objects.all()
     context = {'tablas':tablas}

@@ -101,7 +101,7 @@
       <script src="js/funciones.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
     
-        <form action="funciones/registro.html" method="POST" id="formulario" name="formulario">
+        <form action="funciones/loginf.html" method="POST" id="formulario" name="formulario">
             <h1>Registro</h1>
             <div class="form-group">
                 <label for="correo" class="form-label">Correo:</label>
@@ -116,11 +116,13 @@
               <input type="password" name="contra" id="contra" placeholder="Contraseña*" class="form-control">
             </div>
             <br><br>
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Enviar</button>
+            <div class="col-12">           
+                <button onclick="funciones/registrof.html" href="static/core/funciones/registrof.html" type="submit" class="btn btn-primary">Enviar</button><a href="">
             </div>
-        </form>
-   
+        </form> 
+
+
+
   </div>
   </div>
     <script>
@@ -158,6 +160,8 @@
             
         });
     </script>
+
+    
     <script src="{% static 'js/script.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
