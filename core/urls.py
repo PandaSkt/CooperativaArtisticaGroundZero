@@ -14,5 +14,5 @@ urlpatterns = [
     path('admin', views.admin,name="admin"),
     path('tablacrud', views.tablacrud,name="tablacrud"),
     path('agregarcrud', views.agregarcrud,name="agregarcrud"),
-    path('funciones/formulariof', views.formulariof,name="formulariof")
+    path('loginf', views.agregarcrud,name="loginf"),
 ]
